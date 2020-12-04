@@ -2,9 +2,17 @@
 @import "reset";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 
+/*================================================================
+common
+================================================================*/
+
 body {
   font-family: ヒラギノ明朝 ProN, Hiragino Mincho Pro ,Noto Serif JP;
 }
+
+/*================================================================
+header
+================================================================*/
 
 .header {
   margin: 0 40px;
@@ -44,3 +52,43 @@ body {
   }
 
 }
+/*================================================================
+top
+================================================================*/
+.top {
+  margin: 0 40px;
+
+  &__container {
+  background-image: url(../images/pc/top@2x.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat:no-repeat;
+  position: relative;
+  width: auto;
+  height: 660px;
+  }
+
+  &__left {
+    background-color: #ffffff;
+    position: absolute;
+    top: 235px;
+    width: 330px;
+    height: 330px;
+  }
+
+  &__title {
+    font-size: 26px;
+    padding-top: 92px;
+    line-height: 44px;
+  }
+
+  &__discription {
+    font-size: 16px;
+    padding: 28px 40px 0 0;
+    line-height: 27px;
+  }
+}
+
+/*================================================================
+concept
+================================================================*/

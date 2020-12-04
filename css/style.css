@@ -471,10 +471,16 @@ template {
   display: none;
 }
 
+/*================================================================
+common
+================================================================*/
 body {
   font-family: ヒラギノ明朝 ProN, Hiragino Mincho Pro ,Noto Serif JP;
 }
 
+/*================================================================
+header
+================================================================*/
 .header {
   margin: 0 40px;
 }
@@ -510,3 +516,44 @@ body {
   font-size: 16px;
   line-height: 25px;
 }
+
+/*================================================================
+top
+================================================================*/
+.top {
+  margin: 0 40px;
+}
+
+.top__container {
+  background-image: url(../images/pc/top@2x.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+  width: auto;
+  height: 660px;
+}
+
+.top__left {
+  background-color: #ffffff;
+  position: absolute;
+  top: 235px;
+  width: 330px;
+  height: 330px;
+}
+
+.top__title {
+  font-size: 26px;
+  padding-top: 92px;
+  line-height: 44px;
+}
+
+.top__discription {
+  font-size: 16px;
+  padding: 28px 40px 0 0;
+  line-height: 27px;
+}
+
+/*================================================================
+concept
+================================================================*/
