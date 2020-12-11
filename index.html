@@ -174,21 +174,63 @@ news
   <!-- /*================================================================
 phrase
 ================================================================*/ -->
-<section class="phrase">
-  <div class="phrase__container">
-    <div class="phrase__box">
-      <div class="phrase__left">
-        <h3 class="phrase__title">合言葉は、<br>「 “可愛い” で 地球を守る！」</h3>
-        <p class="phrase__content">深刻化している環境問題に対して、否定や制限、禁止といった強制的な方法ではなく、明るく幸せな未来を目指して、「可愛い」「楽しい」の力を信じて、愛につながる選択を世の中に増やしていきます。</p>
+  <section class="phrase">
+    <div class="phrase__container">
+      <div class="phrase__box">
+        <div class="phrase__left">
+          <h3 class="phrase__title">合言葉は、<br>「 “可愛い” で 地球を守る！」</h3>
+          <p class="phrase__content">
+            深刻化している環境問題に対して、否定や制限、禁止といった強制的な方法ではなく、明るく幸せな未来を目指して、「可愛い」「楽しい」の力を信じて、愛につながる選択を世の中に増やしていきます。</p>
+        </div>
+        <div class="phrase__right"><img src="./images/pc/concept-2@2x.png" alt="コンセプト画像"></div>
       </div>
-      <div class="phrase__right"><img src="./images/pc/concept-2@2x.png" alt="コンセプト画像"></div>
     </div>
-  </div>
-</section>
-<!-- /*================================================================
+  </section>
+  <!-- /*================================================================
 contact
 ================================================================*/ -->
-
+  <section class="contact">
+    <div class="contact__container">
+      <div class="contact__title">
+        <h1>Contact</h1>
+      </div>
+      <p class="contact__required"><span>＊は入力必須項目です</span></p>
+      <form action="#">
+        <ul class="contact__form">
+          <li class="contact__item">
+            <label class="contact__label" for="name">お名前</label>
+            <input type="text" name="" id="name" required>
+          </li>
+          <li class="contact__item">
+            <label class="contact__label" for="address">メールアドレス</label>
+            <input type="email" name="" id="address" required>
+          </li>
+          <li class="contact__item">
+            <label class="contact__label" for="address">法人/個人の選択</label>
+            <div class="contact__radioWrapper">
+              <label class="contact__radio">
+                <input type="radio" required>
+                <span class="contact__radioPart"></span>
+              </label>
+              <label class="contact__radio">
+                <input type="radio" required>
+                <span class="contact__radioPart"></span>
+              </label>
+            </div>
+          </li>
+          <li class="contact__item">
+            <label class="contact__label">問い合わせ内容</label>
+            <input type="textarea" name="" required>
+          </li>
+          <div class="contact__policy">
+            <input type="checkbox" id="box-1">
+            <label for="box-1"><a href="#">プライバシポリシー</a>に同意します。</label>
+          </div>
+        </ul>
+          <input type="submit" name="">
+      </form>
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./script.js"></script>
