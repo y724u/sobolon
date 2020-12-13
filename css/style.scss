@@ -147,6 +147,7 @@ concept
     }
   }
 }
+
 /*================================================================
 feature
 ================================================================*/
@@ -183,7 +184,7 @@ feature
   }
 
   &__item {
-    box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
     width: 340px;
     height: 347px;
   }
@@ -203,6 +204,7 @@ feature
     }
   }
 }
+
 /*================================================================
 image
 ================================================================*/
@@ -228,6 +230,7 @@ image
     }
   }
 }
+
 /*================================================================
 products
 ================================================================*/
@@ -304,6 +307,7 @@ products
     }
   }
 }
+
 /*================================================================
 news
 ================================================================*/
@@ -391,6 +395,7 @@ news
     }
   }
 }
+
 /*================================================================
 phrase
 ================================================================*/
@@ -427,6 +432,193 @@ phrase
     }
   }
 }
+
 /*================================================================
 contact
 ================================================================*/
+.contact {
+
+  &__container {
+    background-image: url(../images/pc/contact@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    color: #3EA1D1;
+    font-size: 40px;
+    margin: 160px 0 66px 0;
+    padding-top: 72px;
+
+    h1 {
+      text-align: center;
+      padding-bottom: 16px;
+      position: relative;
+
+      &::before {
+        background-color: #3EA1D1;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        width: 60px;
+        height: 1px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__required {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+
+    span {
+      color: #E7728E;
+    }
+  }
+
+  &__form {
+    width: 520px;
+    margin: 0 auto;
+    padding-bottom: 85px;
+  }
+
+  &__item {
+    margin-top: 24px;
+  }
+
+  &__label {
+    position: relative;
+    background-color: #3EA1D1;
+    display: inline-block;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    width: 175px;
+    height: 40px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -7px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 0 20px 7px;
+      border-color: transparent transparent transparent #3EA1D1;
+    }
+
+    span {
+      color: #E7728E;
+    }
+  }
+
+  &__text {
+    background: #fff;
+    box-shadow: 5px 5px 15px #606060;
+    border-radius: 2px;
+    width: 320px;
+    height: 40px;
+    display: inline-block;
+    padding-left: 10px;
+    letter-spacing: 1.6px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+
+  &__radioWrapper {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  &__radio {
+    position: relative;
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    &:checked+.contact__radioPart {
+      background-color: #3EA1D1;
+      color: #fff;
+      border-radius: 1px;
+    }
+  }
+
+  &__radioPart {
+    display: inline-block;
+    background-color: #fff;
+    color: #3EA1D1;
+    height: 38px;
+    width: 80px;
+    text-align: center;
+    line-height: 38px;
+    margin-left: -5px;
+  }
+
+  &__textarea {
+    background: #fff;
+    box-shadow: 5px 5px 15px #606060;
+    border-radius: 2px;
+    width: 320px;
+    height: 122px;
+    display: inline-block;
+    padding-left: 10px;
+    letter-spacing: 1.6px;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+
+  &__policy {
+    margin: 33px auto;
+    width: 300px;
+
+    a {
+      border-bottom: 1px solid #3EA1D1;
+      color: #3EA1D1;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+
+        &:checked + .contact__labelPolicy {
+      width: 10px;
+      border-top: 0;
+      border-left: 0;
+      background-color: transparent;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__labelPolicy {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: solid 1px #3EA1D1;
+    background: #fff;
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    left: 0;
+    }
+
+    &__submit {
+      display: block;
+      border: solid 1px #3EA1D1;
+      color: #3EA1D1;
+      background-color: #fff;
+      margin: 0 auto;
+      width: 137px;
+      height: 46px;
+      text-align: center;
+    }
+
+}

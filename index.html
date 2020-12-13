@@ -26,7 +26,6 @@ header
       </div>
     </div>
   </section>
-
   <!-- /*================================================================
 top
 ================================================================*/ -->
@@ -194,40 +193,43 @@ contact
       <div class="contact__title">
         <h1>Contact</h1>
       </div>
-      <p class="contact__required"><span>＊は入力必須項目です</span></p>
+      <p class="contact__required"><span>＊</span>は入力必須項目です</p>
       <form action="#">
         <ul class="contact__form">
           <li class="contact__item">
-            <label class="contact__label" for="name">お名前</label>
-            <input type="text" name="" id="name" required>
+            <label class="contact__label" for="name">お名前<span>*</span></label>
+            <input class="contact__text" type="text" name="" id="name" required>
           </li>
           <li class="contact__item">
-            <label class="contact__label" for="address">メールアドレス</label>
-            <input type="email" name="" id="address" required>
+            <label class="contact__label" for="address">メールアドレス<span>*</span></label>
+            <input class="contact__text" type="email" name="" id="address" required>
           </li>
           <li class="contact__item">
-            <label class="contact__label" for="address">法人/個人の選択</label>
+            <label class="contact__label" for="address">法人/個人の選択<span>*</span></label>
             <div class="contact__radioWrapper">
               <label class="contact__radio">
-                <input type="radio" required>
-                <span class="contact__radioPart"></span>
+                <input class="contact__input" type="radio" required checked>
+                <span class="contact__radioPart">法人</span>
               </label>
               <label class="contact__radio">
-                <input type="radio" required>
-                <span class="contact__radioPart"></span>
+                <input class="contact__input" type="radio" required>
+                <span class="contact__radioPart">個人</span>
               </label>
             </div>
           </li>
           <li class="contact__item">
-            <label class="contact__label">問い合わせ内容</label>
-            <input type="textarea" name="" required>
+            <label class="contact__label">問い合わせ内容<span>*</span></label>
+            <input class="contact__textarea" type="textarea" name="" required>
           </li>
           <div class="contact__policy">
-            <input type="checkbox" id="box-1">
-            <label for="box-1"><a href="#">プライバシポリシー</a>に同意します。</label>
+            <p>
+              <input class="contact__checkbox" type="checkbox" id="box-1">
+              <label class="contact__labelPolicy" for="box-1"></label>
+              <a href="#">プライバシポリシー</a>に同意します。
+            </p>
           </div>
+          <input class="contact__submit" type="submit" name="">
         </ul>
-          <input type="submit" name="">
       </form>
     </div>
   </section>
