@@ -1076,3 +1076,52 @@ contact
   height: 46px;
   text-align: center;
 }
+
+/*================================================================
+footer
+================================================================*/
+.footer {
+  background-color: #F7F7F7;
+  width: 100%;
+  height: 220px;
+}
+
+.footer__container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__container img {
+  display: inline-block;
+  width: 120px;
+  height: 22px;
+  margin-top: 48px;
+}
+
+.footer__list {
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+.footer__list :first-child {
+  margin-right: 32px;
+}
+
+.footer__icons {
+  margin-top: 36px;
+}
+
+.footer__icons i {
+  color: #3EA1D1;
+}
+
+.footer__icons a + a {
+  margin-left: 40px;
+}
+
+.footer__resrved {
+  color: #888888;
+  font-size: 12px;
+  margin-top: 20px;
+}
